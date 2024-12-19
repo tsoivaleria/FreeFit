@@ -28,16 +28,6 @@ body {
 a {
     text-decoration: none;
 }
-h3{
-    font-family: var(--fontBold);
-    font-size: 40px;
-    width: 100%;
-    max-width: 600px;
-    font-weight: 700;
-    line-height: 125%;
-    margin-top: 0;
-    margin-bottom: 0;
- }
 .container{
     width: 100%;
     max-width: 1173px;
@@ -75,6 +65,7 @@ h3{
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
+    transition: var(--tr);
 }
 .nav-link::after{
     content: '';
@@ -91,6 +82,7 @@ h3{
 .email-link{
     position: relative;
     display: inline-block;
+    z-index: 1;
     color: var(--dark);
     font-family: var(--fontBold);
     font-size: 16px;
@@ -210,6 +202,16 @@ h3{
     display: flex;
     justify-content: space-between;
  }
+ .shedule-header h3{
+    font-family: var(--fontBold);
+    font-size: 40px;
+    width: 100%;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 125%;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
  .shedule-header p{
     font-family: var(--fontBold);
     font-size: 28px;
@@ -297,35 +299,40 @@ h3{
     font-weight: 700;
     position: relative;
     display: inline-block;
+    z-index: 1;
+    font-family: var(--fontBold);
+    margin-bottom: 0;
 }
 .subscribe-title::before{
     content: '';
     position: absolute;
-    z-index: 1;
-    left: -5%;
-    top: -10%;
+    z-index: -1;
+    left: -8%;
+    top: -39%;
     width: 53px;
     height: 53px;
     background-color:var(--accent);
-    box-shadow: (0px 13px 24px rgba(251, 241, 56, 0.30));
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.30);
     border-radius: 100%;
 }
  .form {
-    max-width: 620px;
+    max-width: 617px;
     margin: 0 auto;
     display: flex;
     gap: 20px;
     padding-bottom: 80px;
+    padding-top: 40px;
  }
  .form > div {
     flex-basis: calc(100% - 255px - 20px);
     text-align: start;
  }
  .input-email{
+    width: 372px;
     appearance: none;
     text-decoration: none;
     border: none;
-    padding: 19px 250px 19px 19px;
+    padding: 19px 19px;
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
@@ -334,9 +341,8 @@ h3{
     margin-top: 14px;
  }
  .submit-btn {
-    flex-basis: 225px;
-    height: 64px;
     width: 225px;
+    height: 64px;
     text-align: center;
     margin-top: 0px;
     margin-left: 0px;
@@ -438,6 +444,16 @@ h3{
  }
  .about-text{
     flex-basis: calc(100% - 581px - 77px);
+ }
+ .about-text h3{
+    font-family: var(--fontBold);
+    font-size: 40px;
+    width: 100%;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 125%;
+    margin-top: 0;
+    margin-bottom: 0;
  }
  .about-text p{
     font-family: var(--fontRegular);
